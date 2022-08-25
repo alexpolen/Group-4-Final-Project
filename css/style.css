@@ -1,0 +1,71 @@
+h1, h2, h3, h4{
+    font-family: 'Playfair Display', serif;
+}
+p{
+    font-family: 'Work Sans', sans-serif;
+}
+#heroHeader{
+    height: 80em;
+    background-image: url(../images/Homepage_Crop_Square.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff6cc;
+}
+.jumbotronContent{
+    width: fit-content;
+}
+.btn-primary{
+    background-color: #fdd20b;
+    color: #542f65;
+}
+#cabaretDef{
+    background-color: #fdd20b;
+    color: #542f65;
+}
+.genre{
+    height: 400px;
+}
+#genreTheatre{
+    background-image: url(../images/Theatre.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#genreBurlesque{
+    background-image: url(../images/Burlesque.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#genreMusic{
+    background-image: url(../images/Music.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#genreCircus{
+    background-image: url(../images/Circus\ 2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#genreDance{
+    background-image: url(../images/Dance.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#genreDrag{
+    background-image: url(../images/Drag.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#nibblesLibations{
+    background-image: url(../images/BarDrinks.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:#fff6cc;
+}

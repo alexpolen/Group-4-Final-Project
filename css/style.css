@@ -6,6 +6,10 @@ p{
     font-size: 20px;
     font-weight: normal;
 }
+a:hover {
+    color: #ef08b4;
+}
+/*HOME PAGE CONTENT*/
 #heroHeader{
     height: 80em;
     background-image: url(../images/Homepage_Crop_Square.jpg);
@@ -72,7 +76,7 @@ p{
     color:#fff6cc;
     margin: 0 auto;
 }
-
+/*MAIN NAV BAR*/
 .navBar {
     display: flex;
     align-items: center;
@@ -87,6 +91,7 @@ p{
     font-family: 'Work Sans', sans-serif;
 }
 
+/*ABOUT US SECTION*/
 #aboutHero {
     height: 80em;
     background-image: url(../images/AboutUsHero.jpg);
@@ -104,7 +109,6 @@ p{
     text-decoration: underline;
     
 }
-
 .aboutContainer {
     display: flex;
     justify-content: center;
@@ -125,7 +129,7 @@ p{
     padding-left: 32px;
     padding-bottom: 16px;
 }
-
+/*CONTACT US SECTION*/
 #contactUs {
     margin: 0 auto;
     background-color: #542f65;
@@ -144,6 +148,9 @@ p{
 .email {
     background-color: none;
     font-weight: bold;
+}
+.email:hover {
+    font-weight: bolder;
 }
 .contactGrid {
     background-color: #542f65;
@@ -175,6 +182,8 @@ p{
     grid-area: contactImg3;
     height: max-content;
 }
+
+/*SUBSCRIBE SECTION*/
 .subscribeContainer {
     display: flex;
     justify-content: center;
@@ -200,12 +209,40 @@ p{
 .subscribeContainer .lead {
     padding-top: 16px;
 }
+
+/*FOOTER*/
 footer {
     background-color: #fdd20b;
     color: #542f65;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    padding: 16px;    
+}
+footer div {
+    padding-top: 16px;
+    padding-bottom: 16px; 
+}
+
+footer .logo {
+    padding: 16px;
+}
+#socialMedia {
+    padding: 0;
+}
+#icon {
+    width: 24px;
+    height: 24px;
+}
+#fineprint {
+    font-size: small;
+    padding-top: 16px;
+}
+footer .nav {
+    display: inline;
 }
 footer a {
-    color: #542f65; 
+    color: #542f65;
+    font-size: 20px;
 }
+

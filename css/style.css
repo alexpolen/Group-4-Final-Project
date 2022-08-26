@@ -69,3 +69,123 @@ p{
     background-position: center;
     color:#fff6cc;
 }
+
+.navBar {
+    display: flex;
+    align-items: center;
+
+}
+.navBar img {
+    max-width: 124px;
+}
+.navBar a{
+    color: #fdd20b;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#aboutHero {
+    height: 80em;
+    background-image: url(../images/AboutUsHero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff6cc;
+}
+button {
+    background-color: none;
+    color: #542f65;
+    font-weight: bold;
+    border-radius: 8px;
+    height: 32px;
+    min-width: fit-content;
+    text-decoration: underline;
+}
+#contactP {
+    font-weight: bold;
+}
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    padding-left: 64px;
+    background-color: #542f65;
+}
+.aboutContainer img{
+    float: left;
+    max-height: 750px;
+}
+.aboutContainer p {
+    color: #fdd20b;
+}
+.aboutContainer h1{
+    color:#fff6cc
+}
+
+#contactUs {
+    margin: 0 auto;
+    background-color: #542f65;
+    color: #fdd20b;
+    padding: 64px;
+}
+#contactUs h1 {
+    display: flex;
+    justify-content: center;
+    color: #fff6cc
+}
+.contactGrid {
+    background-color: #542f65;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "contactImg1 contact1"
+    "contactImg2 contact2"
+    "contactImg3 contact3"
+    ;
+}
+#contactImg1 {
+    grid-area: contactImg1;
+    max-height: 100px;
+}
+#contact1 {
+    grid-area: contact1;
+}
+#contactImg2{
+    grid-area: contactImg2;
+    max-height: 124px;
+}
+#contact2{
+    grid-area: contact2;
+}
+#contactImg3 {
+    grid-area: contactImg3;
+    max-width: 25%;
+}
+.subscribeContainer {
+    display: flex;
+    justify-content: center;
+    padding-left: 64px;
+    padding-right: 64px;
+    background-color: #542f65;
+}
+.subscribeContainer img{
+    float: left;
+    max-height: 750px;
+}
+.subscribeContainer h1 {
+    color:#fff6cc
+}
+.subscribeContainer p {
+    color: #fdd20b;
+}
+footer {
+    background-color: #fdd20b;
+    color: #542f65;
+    display: flex;
+    justify-content: space-between;
+}
+footer a {
+    color: #542f65;
+    
+}

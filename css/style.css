@@ -36,6 +36,8 @@ a:hover {
     height: 64px;
     display: flex;
     align-items: center;
+    text-align: justify;
+    width: fit-content;
     font-weight: bold;
     border: none;
 }

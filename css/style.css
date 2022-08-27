@@ -9,9 +9,7 @@ p{
 a:hover {
     color: #ef08b4;
 }
-button:hover {
-    background-color: #ef08b4;
-}
+
 /*HOME PAGE CONTENT*/
 #heroHeader{
     height: 80em;
@@ -34,8 +32,14 @@ button:hover {
 .btn-primary{
     background-color: #fdd20b;
     color: #542f65;
+    border-radius: 48px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    border: none;
 }
-.btn-primary :hover {
+.btn-primary:hover {
     background-color: #ef08b4;
 }
 #cabaretDef{

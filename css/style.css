@@ -9,6 +9,9 @@ p{
 a:hover {
     color: #ef08b4;
 }
+button:hover {
+    background-color: #ef08b4;
+}
 /*HOME PAGE CONTENT*/
 #heroHeader{
     height: 80em;
@@ -17,17 +20,40 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center;
     color: #fff6cc;
+    margin: 0 auto;
 }
 .jumbotronContent{
     width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.jumbotronContent h1{
+    padding-bottom: 16px;
 }
 .btn-primary{
     background-color: #fdd20b;
     color: #542f65;
 }
+.btn-primary :hover {
+    background-color: #ef08b4;
+}
 #cabaretDef{
     background-color: #fdd20b;
     color: #542f65;
+    margin: 0 auto;
+}
+#showGenres {
+    background-color: #542f65;
+    color: #fdd20b;
+    margin: 0 auto;
+    padding: 32px;
+}
+#showGenres h2 {
+    color:#fff6cc;
+}
+#genres2 {
+    padding-top: 16px;
 }
 .genre{
     height: 400px;
@@ -80,16 +106,17 @@ a:hover {
 .navBar {
     display: flex;
     align-items: center;
-
+    padding-left: 64px;
 }
-.navBar img {
-    max-width: 124px;
+.navBar ul {
+    padding-left: 32px;
 }
-.navBar a{
+.navBar a {
     color: #fdd20b;
     font-size: 20px;
     font-family: 'Work Sans', sans-serif;
 }
+
 
 /*ABOUT US SECTION*/
 #aboutHero {
@@ -105,9 +132,11 @@ a:hover {
     font-family: 'Work Sans', sans-serif;
     font-weight: normal;
     font-size: 24px;
-    color: #ef08b4;
-    text-decoration: underline;
-    
+    color: #fdd20b;
+    text-decoration: underline;  
+}
+button :hover {
+    color: #ef08b4
 }
 .aboutContainer {
     display: flex;
@@ -219,16 +248,17 @@ footer {
     justify-content: space-between;
     padding: 16px;    
 }
-footer div {
+#footerContent {
     padding-top: 16px;
     padding-bottom: 16px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 footer .logo {
-    padding: 16px;
-}
-#socialMedia {
-    padding: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 64px;
 }
 #icon {
     width: 24px;
@@ -240,6 +270,7 @@ footer .logo {
 }
 footer .nav {
     display: inline;
+    padding-right: 64px;
 }
 footer a {
     color: #542f65;

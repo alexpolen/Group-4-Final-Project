@@ -11,21 +11,22 @@
   </head>
   <body>
     <header>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
+      
       <div class="jumbotron jumbotron-fluid" id="heroHeader">
+        <div class="navBar">
+          <a class="logo" href="index.html"><img src="images/boxoffice contact img.png"></a>
+          <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+          </ul>   
+      </div>
         <div class="container jumbotronContent">
           <h1 class="display-4">Welcome to The Clocktower Cabaret</h1>
           <p class="lead">
@@ -46,7 +47,7 @@
       </div>
     </section>
     <!-- Show Genres -->
-    <section>
+    <section id="showGenres">
       <div class="container">
         <div class="row align-self-center justify-content-center">
           <h2>We Have It All</h2>
@@ -63,7 +64,7 @@
           </div>
         </div>
         <div class="row align-self-center justify-content-center">
-          <p>Circus, Dance, Drag</p>
+          <p id="genres2">Circus, Dance, Drag</p>
         </div>
         <div class="row align-items-center ">
           <div class="col-sm-12 col-md-4 col-lg-4 genre" id="genreCircus">
@@ -92,7 +93,31 @@
     </section>
     <!-- Footer -->
     <footer>
-
+      <a class="logo" href="index.html"><img src="images/boxoffice contact img.png"></a>
+      <div id="footerContent">
+        <h1>Join Us at The Clocktower Cabaret</h1>
+        <div id="socailMedia">
+          <img id="icon" src="images/fb icon.png">
+          <img id="icon" src="images/insta icon.png">
+          <img id="icon" src="images/twitter icon.png">
+          <img id="icon" src="images/email icon.png">
+        </div>
+        <p id="fineprint">© 2022 Clocktower Cabaret</p>
+      </div>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Menu</a>
+        </li>
+      </ul>
     </footer>
   </body>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

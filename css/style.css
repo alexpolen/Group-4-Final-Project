@@ -3,7 +3,13 @@ h1, h2, h3, h4{
 }
 p{
     font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
 }
+a:hover {
+    color: #ef08b4;
+}
+/*HOME PAGE CONTENT*/
 #heroHeader{
     height: 80em;
     background-image: url(../images/Homepage_Crop_Square.jpg);
@@ -68,8 +74,9 @@ p{
     background-repeat: no-repeat;
     background-position: center;
     color:#fff6cc;
+    margin: 0 auto;
 }
-
+/*MAIN NAV BAR*/
 .navBar {
     display: flex;
     align-items: center;
@@ -84,6 +91,7 @@ p{
     font-family: 'Work Sans', sans-serif;
 }
 
+/*ABOUT US SECTION*/
 #aboutHero {
     height: 80em;
     background-image: url(../images/AboutUsHero.jpg);
@@ -91,53 +99,65 @@ p{
     background-repeat: no-repeat;
     background-position: center;
     color: #fff6cc;
+    margin: 0 auto;
 }
-button {
-    background-color: none;
-    color: #542f65;
-    font-weight: bold;
-    border-radius: 8px;
-    height: 32px;
-    min-width: fit-content;
+.email {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    color: #ef08b4;
     text-decoration: underline;
-}
-#contactP {
-    font-weight: bold;
+    
 }
 .aboutContainer {
     display: flex;
     justify-content: center;
-    padding-left: 64px;
+    padding: 64px;
     background-color: #542f65;
 }
 .aboutContainer img{
     float: left;
-    max-height: 750px;
+    max-height: 775px;
+    padding-right: 32px;
 }
 .aboutContainer p {
     color: #fdd20b;
+    padding-left: 32px;
 }
 .aboutContainer h1{
-    color:#fff6cc
+    color:#fff6cc;
+    padding-left: 32px;
+    padding-bottom: 16px;
 }
-
+/*CONTACT US SECTION*/
 #contactUs {
     margin: 0 auto;
     background-color: #542f65;
     color: #fdd20b;
     padding: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #contactUs h1 {
     display: flex;
     justify-content: center;
-    color: #fff6cc
+    color: #fff6cc;
+    padding-bottom: 32px;
+}
+.email {
+    background-color: none;
+    font-weight: bold;
+}
+.email:hover {
+    font-weight: bolder;
 }
 .contactGrid {
     background-color: #542f65;
     display: grid;
-    justify-content: center;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 20% 80%;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 32px;
     grid-template-areas: 
     "contactImg1 contact1"
     "contactImg2 contact2"
@@ -146,46 +166,83 @@ button {
 }
 #contactImg1 {
     grid-area: contactImg1;
-    max-height: 100px;
+    height: max-content;
 }
 #contact1 {
     grid-area: contact1;
 }
 #contactImg2{
     grid-area: contactImg2;
-    max-height: 124px;
+    height: max-content;
 }
 #contact2{
     grid-area: contact2;
 }
 #contactImg3 {
     grid-area: contactImg3;
-    max-width: 25%;
+    height: max-content;
 }
+
+/*SUBSCRIBE SECTION*/
 .subscribeContainer {
     display: flex;
     justify-content: center;
-    padding-left: 64px;
-    padding-right: 64px;
+    padding: 64px;
     background-color: #542f65;
 }
 .subscribeContainer img{
     float: left;
-    max-height: 750px;
+    max-height: 400px;
+    padding-right: 64px;
 }
 .subscribeContainer h1 {
-    color:#fff6cc
+    color:#fff6cc;
+    padding-bottom: 16px;
 }
 .subscribeContainer p {
     color: #fdd20b;
+    padding-bottom: 16px;
 }
+.subscribe {
+    width: 75%;
+}
+.subscribeContainer .lead {
+    padding-top: 16px;
+}
+
+/*FOOTER*/
 footer {
     background-color: #fdd20b;
     color: #542f65;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    padding: 16px;    
+}
+footer div {
+    padding-top: 16px;
+    padding-bottom: 16px; 
+}
+
+footer .logo {
+    padding: 16px;
+}
+#socialMedia {
+    padding: 0;
+}
+#icon {
+    width: 24px;
+    height: 24px;
+}
+#fineprint {
+    font-size: small;
+    padding-top: 16px;
+}
+footer .nav {
+    display: inline;
 }
 footer a {
     color: #542f65;
-    
+    font-size: 20px;
 }
+

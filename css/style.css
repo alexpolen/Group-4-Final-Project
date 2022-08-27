@@ -6,11 +6,53 @@ p{
     font-size: 20px;
     font-weight: normal;
 }
+
+.btn-primary{
+    background-color: #fdd20b;
+    color: #542f65;
+    border-radius: 48px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    width: fit-content;
+    font-weight: bold;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #ef08b4;
+}
+
+/*MAIN NAV BAR*/
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+.navBar div{
+    display: flex;
+    align-items: center;
+}
+.navBar ul {
+    padding-left: 32px;
+}
+.navBar .nav-link {
+    color: #fdd20b;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
 a:hover {
     color: #ef08b4;
 }
+.navBar .nav-link:hover {
+    border-bottom: 2px solid #fdd20b;
+    border-bottom-width: fit-content; 
+}
 
-/*HOME PAGE CONTENT*/
+/*HOME PAGE HERO*/
 #heroHeader{
     height: 80em;
     background-image: url(../images/Homepage_Crop_Square.jpg);
@@ -29,21 +71,8 @@ a:hover {
 .jumbotronContent h1{
     padding-bottom: 16px;
 }
-.btn-primary{
-    background-color: #fdd20b;
-    color: #542f65;
-    border-radius: 48px;
-    height: 64px;
-    display: flex;
-    align-items: center;
-    text-align: justify;
-    width: fit-content;
-    font-weight: bold;
-    border: none;
-}
-.btn-primary:hover {
-    background-color: #ef08b4;
-}
+
+/*HOME PAGE CONTENT*/
 #cabaretDef{
     background-color: #fdd20b;
     color: #542f65;
@@ -100,6 +129,8 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+/*FOOD & DRINK*/
 #nibblesLibations{
     background-image: url(../images/BarDrinks.jpg);
     background-size: cover;
@@ -108,23 +139,8 @@ a:hover {
     color:#fff6cc;
     margin: 0 auto;
 }
-/*MAIN NAV BAR*/
-.navBar {
-    display: flex;
-    align-items: center;
-    padding-left: 64px;
-}
-.navBar ul {
-    padding-left: 32px;
-}
-.navBar a {
-    color: #fdd20b;
-    font-size: 20px;
-    font-family: 'Work Sans', sans-serif;
-}
 
-
-/*ABOUT US SECTION*/
+/*ABOUT US HERO*/
 #aboutHero {
     height: 80em;
     background-image: url(../images/AboutUsHero.jpg);
@@ -134,16 +150,7 @@ a:hover {
     color: #fff6cc;
     margin: 0 auto;
 }
-.email {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: normal;
-    font-size: 24px;
-    color: #fdd20b;
-    text-decoration: underline;  
-}
-button :hover {
-    color: #ef08b4
-}
+
 .aboutContainer {
     display: flex;
     justify-content: center;
@@ -181,10 +188,14 @@ button :hover {
     padding-bottom: 32px;
 }
 .email {
-    background-color: none;
-    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: #fdd20b;
+    text-decoration: underline;  
 }
 .email:hover {
+    color: #ef08b4;
     font-weight: bolder;
 }
 .contactGrid {

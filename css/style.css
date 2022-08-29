@@ -55,8 +55,8 @@ p{
     margin: 0 auto;
 }
 @media screen and (max-width:600px) {
-    #nav-link {
-    font-size: 12px;
+    .navBar {
+    justify-content: baseline;
     }
     
 }
@@ -173,10 +173,23 @@ a:hover {
     padding: 64px;
     background-color: #542f65;
 }
+@media screen and (max-width:600px) {
+    .aboutContainer{
+        flex-direction: column;
+    }
+    
+}
 .aboutContainer img{
     float: left;
     max-height: 775px;
     padding-right: 32px;
+}
+@media screen and (max-width:600px) {
+    .aboutContainer img{
+        max-width: 400px;
+        padding-right: 10px
+    }
+    
 }
 .aboutContainer p {
     color: #fdd20b;
@@ -186,6 +199,12 @@ a:hover {
     color:#fff6cc;
     padding-left: 32px;
     padding-bottom: 16px;
+}
+@media screen and (max-width:600px) {
+    .aboutContainer h1{
+        font-size: 40px;
+    }
+    
 }
 /*CONTACT US SECTION*/
 #contactUs {
@@ -225,6 +244,22 @@ a:hover {
     "contactImg2 contact2"
     "contactImg3 contact3"
     ;
+}
+@media screen and (max-width:600px) {
+    .contactGrid {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "contactImg1"
+        "contact1"
+        "contactImg2" 
+        "contact2"
+        "contactImg3" 
+        "contact3"
+        ;
+
+    }
+    
 }
 #contactImg1 {
     grid-area: contactImg1;
@@ -268,8 +303,19 @@ a:hover {
 .subscribe {
     width: 75%;
 }
+@media screen and (max-width:600px){
+    .subscribe {
+        width: 100%;
+    }
+}
 .subscribeContainer .lead {
     padding-top: 16px;
+}
+
+@media screen and (max-width:600px){
+    .subscribeContainer {
+        flex-direction: column;
+    }
 }
 
 /*FOOTER*/
@@ -281,17 +327,57 @@ footer {
     justify-content: space-between;
     padding: 16px;    
 }
+@media screen and (max-width:600px){
+    footer {
+        justify-content: center;
+        width: 100%;
+        padding-top: 20px;
+        padding: 2px;
+    }
+}
 #footerContent {
     padding-top: 16px;
     padding-bottom: 16px; 
     display: flex;
     flex-direction: column;
     align-items: center;
+
+}
+@media screen and (max-width:600px){
+    #footerContent {
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width:600px){
+    #footerContent #socailMedia {
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width:600px){
+    #footerContent h1 {
+        width: 100%;
+        font-size: 18px;
+        overflow:visible;
+        padding-top: 10px;
+    }
 }
 footer .logo {
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 64px;
+}
+@media screen and (max-width:600px){
+    footer .logo {
+        width: 100px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 60px;
+    }
+}
+@media screen and (max-width:600px){
+    .logo img {
+        max-width: 80px;
+    }
 }
 #icon {
     width: 24px;
@@ -305,8 +391,25 @@ footer .nav {
     display: inline;
     padding-right: 64px;
 }
+@media screen and (max-width:600px){
+    footer .nav {
+        display: block;
+        padding-left: 8px;
+        padding-right: 0;
+        padding-top: 60px;
+        line-height: 6px;
+        
+    }
+}
 footer a {
     color: #542f65;
     font-size: 20px;
+}
+@media screen and (max-width:600px){
+    footer a {
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0px;
+}
 }
 

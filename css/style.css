@@ -1,6 +1,9 @@
 h1, h2, h3, h4{
     font-family: 'Playfair Display', serif;
 }
+h1 {
+    font-weight: bold;
+}
 p{
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
@@ -19,6 +22,25 @@ p{
     font-weight: bold;
     border: none;
 }
+@media screen and (max-width:600px) {
+    .btn-primary{
+        height:32px;
+        min-width: 80px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:600px) {
+    #ul{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .logo{
+        max-width:128px;
+        padding-left: 0;
+    }
+}
 .btn-primary:hover {
     background-color: #ef08b4;
 }
@@ -26,10 +48,17 @@ p{
 /*MAIN NAV BAR*/
 .navBar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding-left: 64px;
     padding-right: 64px;
+    margin: 0 auto;
+}
+@media screen and (max-width:600px) {
+    #nav-link {
+    font-size: 12px;
+    }
+    
 }
 .navBar div{
     display: flex;
@@ -51,10 +80,13 @@ a:hover {
     border-bottom: 2px solid #fdd20b;
     border-bottom-width: fit-content; 
 }
+#aboutHero {
+    /* padding-top: ; */
+}
 
 /*HOME PAGE HERO*/
 #heroHeader{
-    height: 80em;
+    height: 60em;
     background-image: url(../images/Homepage_Crop_Square.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -67,9 +99,16 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 256px;
+    
 }
 .jumbotronContent h1{
     padding-bottom: 16px;
+    padding-top: 0px;
+}
+
+#aboutHero {
+    margin: 0 auto;
 }
 
 /*HOME PAGE CONTENT*/
@@ -99,18 +138,28 @@ a:hover {
 
 /*FOOD & DRINK*/
 #nibblesLibations{
-    background-image: url(../images/BarDrinks.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/BarDrinks_Crop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color:#fff6cc;
     margin: 0 auto;
+    height: 24em;
 }
-
+.nibblesLibationsContainer{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /*ABOUT US HERO*/
 #aboutHero {
-    height: 80em;
-    background-image: url(../images/AboutUsHero.jpg);
+    height: 55em;
+    background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.15)), url(../images/AboutUsHero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -261,4 +310,3 @@ footer a {
     font-size: 20px;
 }
 
-/*Test*/

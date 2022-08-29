@@ -80,11 +80,6 @@ a:hover {
     border-bottom: 2px solid #fdd20b;
     border-bottom-width: fit-content; 
 }
-#aboutHero {
-    /* padding-top: ; */
-}
-
-/*HOME PAGE HERO*/
 #heroHeader{
     height: 60em;
     background-image: url(../images/Homepage_Crop_Square.jpg);
@@ -332,7 +327,7 @@ footer {
         justify-content: center;
         width: 100%;
         padding-top: 20px;
-        padding: 2px;
+        padding: 0;
     }
 }
 #footerContent {
@@ -368,7 +363,7 @@ footer .logo {
 }
 @media screen and (max-width:600px){
     footer .logo {
-        width: 100px;
+        width: 90px;
         padding-left: 0px;
         padding-right: 0px;
         padding-top: 60px;

@@ -25,6 +25,26 @@ p{
 .btn-primary:hover {
     background-color: #ef08b4;
 }
+.btn-primary:focus {
+    background-color: #542f65;    
+}
+.btn-primary:active {
+    background-color: #542f65; 
+}
+.btn-primary:visited {
+    background-color: #542f65;
+    stroke: #ffffff;
+}
+a:visited{
+    background-color: #542f65;
+    stroke: #ffffff; 
+}
+a:active {
+    background-color: #542f65;
+}
+a:focus {
+    background-color: #542f65;
+}
 
 /*MAIN NAV BAR*/
 .navBar {

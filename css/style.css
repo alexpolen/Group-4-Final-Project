@@ -116,12 +116,16 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 256px;
-    
+    padding-top: 256px; 
 }
 .jumbotronContent h1{
-    padding-bottom: 16px;
+    padding-bottom: 8px;
     padding-top: 0px;
+}
+@media screen and (max-width:600px) {
+    .jumbotronContent h1 {
+        font-size: 40px;
+    }   
 }
 
 #aboutHero {
@@ -133,6 +137,20 @@ a:hover {
     background-color: #fdd20b;
     color: #542f65;
     margin: 0 auto;
+}
+@media screen and (max-width:600px) {
+    #cabaretDef {
+        padding: 30px;
+    } 
+    #cabaretDef h1 {
+        font-size: 34px;
+    }  
+    #cabaretDef .lead {
+        font-size: 16px;
+    }
+    #cabaretDef h3 {
+        font-size: 22px;
+    }
 }
 #showGenres {
     background-color: #542f65;
@@ -173,6 +191,14 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
+.nibblesLibationsContainer h1 {
+    text-shadow: 0px 0px 4px #000000;
+}
+@media screen and (max-width:600px) {
+    .nibblesLibationsContainer h1 {
+        font-size: 34px;
+    }   
+}
 /*ABOUT US HERO*/
 #aboutHero {
     height: 55em;
@@ -194,7 +220,10 @@ a:hover {
     .aboutContainer{
         flex-direction: column;
     }
-    
+    .jumbotronContent h1 {
+        text-align: center;
+        padding: 30px;
+    }
 }
 .aboutContainer img{
     float: left;
@@ -219,12 +248,18 @@ a:hover {
     max-width: 800px;
 }
 @media screen and (max-width:600px) {
-    .aboutContainer h1{
-        font-size: 40px;
+    .aboutInfo h1 {
+        padding-top: 40px;
+        font-size: 34px;
     }   
 }
 .aboutInfo p {
     max-width: 720px;
+}
+@media screen and (max-width:600px) {
+    .aboutInfo p {
+        font-size: 18px;
+    }   
 }
 /*CONTACT US SECTION*/
 #contactUs {
@@ -241,6 +276,12 @@ a:hover {
     justify-content: center;
     color: #fff6cc;
     padding-bottom: 32px;
+}
+@media screen and (max-width:600px) {
+    #contactUs h1 {
+        font-size: 34px;
+        padding-bottom: 56px;
+    }   
 }
 .email {
     font-family: 'Work Sans', sans-serif;
@@ -283,6 +324,11 @@ a:hover {
     grid-area: contactImg1;
     height: max-content;
 }
+@media screen and (max-width:600px) {
+    #contactImg1 {
+        justify-self: center;
+    }
+}
 #contact1 {
     grid-area: contact1;
 }
@@ -290,12 +336,22 @@ a:hover {
     grid-area: contactImg2;
     height: max-content;
 }
+@media screen and (max-width:600px) {
+    #contactImg2 {
+        justify-self: center;
+    }
+}
 #contact2{
     grid-area: contact2;
 }
 #contactImg3 {
     grid-area: contactImg3;
     height: max-content;
+}
+@media screen and (max-width:600px) {
+    #contactImg3 {
+        justify-self: center;
+    }
 }
 
 /*SUBSCRIBE SECTION*/
@@ -322,8 +378,17 @@ a:hover {
     width: 75%;
 }
 @media screen and (max-width:600px){
+    .subscribe h1 {
+        padding-top: 25px;
+        width: 100%;
+        font-size: 34px;
+    }
     .subscribe {
         width: 100%;
+    }
+    .subscribeImage {
+        padding: 0;
+        justify-self: center;
     }
 }
 .subscribeContainer .lead {

@@ -57,7 +57,7 @@ a:hover {
     border-bottom-width: fit-content; 
 }
 #aboutHero {
-    padding-top: ;
+    /* padding-top: ; */
 }
 
 /*HOME PAGE HERO*/
@@ -114,14 +114,24 @@ a:hover {
 
 /*FOOD & DRINK*/
 #nibblesLibations{
-    background-image: url(../images/BarDrinks.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../images/BarDrinks_Crop.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color:#fff6cc;
     margin: 0 auto;
+    height: 24em;
 }
-
+.nibblesLibationsContainer{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /*ABOUT US HERO*/
 #aboutHero {
     height: 55em;

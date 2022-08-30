@@ -23,7 +23,22 @@ p{
     border: none;
 }
 .btn-primary:hover {
-    background-color: #ef08b4;
+    background-color: #ef08b4 !important;
+    color: white !important;
+}
+.btn-primary:visited,.btn-primary:focus{
+    background-color: #fdd20b;
+    color: #542f65;
+    border-radius: 48px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    width: fit-content;
+    font-weight: bold;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 /*MAIN NAV BAR*/

@@ -35,6 +35,17 @@ p{
     padding-right: 64px;
     margin: 0 auto;
 }
+@media screen and (max-width:600px) {
+    .navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0;
+    }
+    
+}
 
 .navBar div{
     display: flex;
@@ -42,6 +53,12 @@ p{
 }
 .navBar ul {
     padding-left: 32px;
+}
+@media screen and (max-width:600px) {
+    .nav-item .navBar .nav-link .nav {
+        font-size: 12px;
+    }
+    
 }
 .navBar .nav-link {
     color: #fdd20b;

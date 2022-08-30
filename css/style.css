@@ -68,8 +68,8 @@ a:hover {
     color: #ef08b4;
 }
 .navBar .nav-link:hover {
-    border-bottom: 2px solid #fdd20b;
-    border-bottom-width: fit-content; 
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 #aboutHero {
     /* padding-top: ; */

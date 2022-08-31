@@ -122,6 +122,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     padding-top: 256px; 
+
 }
 .jumbotronContent h1{
     padding-bottom: 8px;
@@ -206,7 +207,7 @@ a:hover {
 }
 /*ABOUT US HERO*/
 #aboutHero {
-    height: 55em;
+    height: 60em;
     background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.15)), url(../images/AboutUsHero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -214,6 +215,20 @@ a:hover {
     color: #fff6cc;
     margin: 0 auto;
 }
+
+
+
+/*ABOUT PAGE HERO*/
+
+#aboutHero .jumbotronContent{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 400px; 
+
+}
+
 
 .aboutContainer {
     display: flex;
@@ -449,13 +464,13 @@ footer {
         padding-top: 10px;
     }
 }
-footer .logo {
+footer #logo {
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 64px;
 }
 @media screen and (max-width:600px){
-    footer .logo {
+    footer #logo {
         width: 90px;
         padding-left: 0px;
         padding-right: 0px;
@@ -463,7 +478,7 @@ footer .logo {
     }
 }
 @media screen and (max-width:600px){
-    .logo img {
+    #logo img {
         max-width: 80px;
     }
 }
@@ -477,7 +492,7 @@ footer .logo {
 }
 footer .nav {
     display: inline;
-    padding-right: 64px;
+    padding-right: 48px;
 }
 @media screen and (max-width:600px){
     footer .nav {
@@ -507,13 +522,7 @@ footer a {
 /*Hamburger Menu*/
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
-body {
-  padding: 0px;
-  margin: 0px;
-  font-size: 20px;
-  min-height: 200vh;
-  font-family: 'Cabin', Sans-serif;
-}
+
 
 .overlay{
     position: fixed;
@@ -525,7 +534,6 @@ body {
     visibility: hidden;
     transition: opacity .35s, visibility .35s, height .35s;
     overflow: hidden;
-    background: black;
     z-index: -1;
 }
 
@@ -535,6 +543,10 @@ body {
   width: 100%;
   margin: 0px;  
   z-index: 9;
+  padding-top: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 #main-menu ul {
@@ -544,7 +556,7 @@ body {
   margin: 0px auto;
   padding: 0px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   z-index: 9;
 }
@@ -570,10 +582,10 @@ body {
 
 #hamburger-menu {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 50px;
-    height: 50px;
+    top: 60px;
+    left: 40px;
+    width: 40px;
+    height: 35px;
     display: none;
     border: none;
     padding: 0px;
@@ -582,9 +594,9 @@ body {
     background: linear-gradient(
       to bottom, 
       #fdd20b, #fdd20b 20%, 
-      white 20%, white 40%, 
+      black 20%, black 40%, 
       #fdd20b 40%, #fdd20b 60%, 
-      white 60%, white 80%, 
+      black 60%, black 80%, 
       #fdd20b 80%, #fdd20b 100%
     );
 }

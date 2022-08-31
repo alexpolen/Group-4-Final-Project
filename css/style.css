@@ -37,13 +37,20 @@ p{
 .logo{
     position: absolute;
     top: 60;
-    left: 3%;
+    left: 5%;
 }
 @media screen and (max-width:600px) {
     .logo{
         max-width:128px;
-        padding-left: 0;
+        position: relative;
+        left: 25%;
     }
+    .navBar {    
+        display: flex;
+        justify-content: center; 
+    }
+
+    
 }
 .btn-primary:hover {
     background-color: #ef08b4 !important;
@@ -65,39 +72,46 @@ p{
 }
 
 /*MAIN NAV BAR*/
-.navBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 0;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.nav-item {
-    justify-content: space-between;
-}
-
-.nav-item2 {
-    flex-grow: 2;
-}
-
-.navBar div{
-    display: flex;
-    align-items: center;
-}
-.navBar ul {
-    padding-left: 12px;
-}
 @media screen and (max-width:600px) {
     .nav-item .navBar .nav-link .nav {
         font-size: 12px;
     }
     
 }
-.navBar .nav-link {
+.navBar {
+    padding-left: 64px;
+    padding-right: 64px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: fit-content;
+}
+#main-menu .nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.nav-item {
+    color: #fdd20b;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    width: fit-content;
+    padding-left: 64px;
+}
+
+.nav-item2 {
+    flex-grow: 2;
+    float: right;
+    color: #542f65;
+    font-weight: bold;
+}
+
+
+.navBar .nav-item {
     color: #fdd20b;
     font-size: 20px;
     font-family: 'Work Sans', sans-serif;
@@ -107,8 +121,8 @@ a:hover {
     color: #ef08b4;
 }
 .navBar .nav-link:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
+    border-bottom: 2px solid #fdd20b;
+    border-bottom-width: fit-content;
 }
 .jumbotronContent h1{
     padding-bottom: 16px;
@@ -120,6 +134,7 @@ a:hover {
     padding-top: 0px;
     text-shadow: 0px 0px 3px #000000;
 }
+
 /*HOME PAGE HERO*/
 #heroHeader{
     height: 60em;

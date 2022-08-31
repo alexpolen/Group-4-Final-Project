@@ -73,6 +73,15 @@ p{
     padding-right: 24px;
     padding-top: 0;
     margin: 0 auto;
+    width: 100%;
+}
+
+.nav-item {
+    justify-content: space-between;
+}
+
+.nav-item2 {
+    flex-grow: 2;
 }
 
 .navBar div{

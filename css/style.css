@@ -129,15 +129,11 @@ a:hover {
     text-decoration-thickness: 2px;
 }
 .jumbotronContent h1{
-    padding-bottom: 16px;
+    padding-bottom: 0px;
     padding-top: 0px;
     text-shadow: 0px 0px 3px #000000;
 }
-.jumbotronContent h1{
-    padding-bottom: 16px;
-    padding-top: 0px;
-    text-shadow: 0px 0px 3px #000000;
-}
+
 /*HOME PAGE HERO*/
 #heroHeader{
     height: 60em;
@@ -156,16 +152,17 @@ a:hover {
     padding-top: 256px; 
 
 }
-.jumbotronContent h1{
-    padding-bottom: 8px;
-    padding-top: 0px;
-}
+
 @media screen and (max-width:600px) {
+    .jumbotronContent {
+        padding-top: 400px;
+    }
     .jumbotronContent h1 {
         font-size: 40px;
-    }   
-}
-
+        justify-content: center;
+        text-justify: center;
+    }
+    }
 #aboutHero {
     margin: 0 auto;
 }
@@ -267,7 +264,8 @@ a:hover {
     }
     .jumbotronContent h1 {
         text-align: center;
-        padding: 30px;
+
+        padding: 0px;
     }
 }
 .aboutContainer img{

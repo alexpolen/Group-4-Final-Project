@@ -403,13 +403,19 @@ a:hover {
 .subscribeContainer {
     display: flex;
     justify-content: center;
-    padding: 64px;
+    padding: 32px;
     background-color: #542f65;
 }
 .subscribeContainer img{
     float: left;
     max-height: 400px;
     padding-right: 64px;
+}
+@media screen and (max-width:600px){
+    .subscribeContainer img{
+        max-width: 500px;
+        padding-right: 0;
+    }    
 }
 .subscribeContainer h1 {
     color:#fff6cc;
@@ -419,9 +425,7 @@ a:hover {
     color: #fdd20b;
     padding-bottom: 16px;
 }
-.subscribe {
-    width: 75%;
-}
+
 @media screen and (max-width:600px){
     .subscribe h1 {
         padding-top: 25px;
@@ -433,7 +437,10 @@ a:hover {
     }
     .subscribeImage {
         padding: 0;
-        justify-self: center;
+        justify-content: center;
+        width: 100%;
+        max-height: 500px;
+
     }
 }
 .subscribeContainer .lead {

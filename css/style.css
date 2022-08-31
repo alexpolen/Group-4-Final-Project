@@ -34,7 +34,11 @@ p{
         font-size: 12px;
     }
 }
-
+.logo{
+    position: absolute;
+    top: 60;
+    left: 3%;
+}
 @media screen and (max-width:600px) {
     .logo{
         max-width:128px;
@@ -65,9 +69,19 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 64px;
-    padding-right: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 0;
     margin: 0 auto;
+    width: 100%;
+}
+
+.nav-item {
+    justify-content: space-between;
+}
+
+.nav-item2 {
+    flex-grow: 2;
 }
 
 .navBar div{
@@ -75,7 +89,7 @@ p{
     align-items: center;
 }
 .navBar ul {
-    padding-left: 32px;
+    padding-left: 12px;
 }
 @media screen and (max-width:600px) {
     .nav-item .navBar .nav-link .nav {
@@ -101,6 +115,11 @@ a:hover {
     padding-top: 0px;
     text-shadow: 0px 0px 3px #000000;
 }
+.jumbotronContent h1{
+    padding-bottom: 16px;
+    padding-top: 0px;
+    text-shadow: 0px 0px 3px #000000;
+}
 /*HOME PAGE HERO*/
 #heroHeader{
     height: 60em;
@@ -117,6 +136,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     padding-top: 256px; 
+
 }
 .jumbotronContent h1{
     padding-bottom: 8px;
@@ -201,7 +221,7 @@ a:hover {
 }
 /*ABOUT US HERO*/
 #aboutHero {
-    height: 55em;
+    height: 60em;
     background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.15)), url(../images/AboutUsHero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -209,7 +229,14 @@ a:hover {
     color: #fff6cc;
     margin: 0 auto;
 }
+#aboutHero .jumbotronContent{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 400px; 
 
+}
 .aboutContainer {
     display: flex;
     justify-content: center;
@@ -444,13 +471,13 @@ footer {
         padding-top: 10px;
     }
 }
-footer .logo {
+footer #logo {
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 64px;
 }
 @media screen and (max-width:600px){
-    footer .logo {
+    footer #logo {
         width: 90px;
         padding-left: 0px;
         padding-right: 0px;
@@ -458,7 +485,7 @@ footer .logo {
     }
 }
 @media screen and (max-width:600px){
-    .logo img {
+    #logo img {
         max-width: 80px;
     }
 }
@@ -472,7 +499,7 @@ footer .logo {
 }
 footer .nav {
     display: inline;
-    padding-right: 64px;
+    padding-right: 48px;
 }
 @media screen and (max-width:600px){
     footer .nav {
@@ -493,6 +520,146 @@ footer a {
     footer a {
         font-size: 14px;
         padding: 0px;
-}
+    }
 }
 
+
+
+
+/*Hamburger Menu*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#main-menu {
+  display: block;
+  height: 100px;
+  width: 100%;
+  margin: 0px;  
+  z-index: 9;
+  padding-top: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#main-menu ul {
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9;
+}
+
+#main-menu li {
+  list-style-type: none;
+  font-size: 2rem;
+}
+
+#main-menu a {
+  color: #fdd20b;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+#main-menu a:hover {
+  text-decoration: underline;
+}
+
+#hamburger-input{
+  display: none;
+}
+
+#hamburger-menu {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    width: 40px;
+    height: 35px;
+    display: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Cabin', Sans-serif;
+    background: linear-gradient(
+      to bottom, 
+      #fdd20b, #fdd20b 20%, 
+      black 20%, black 40%, 
+      #fdd20b 40%, #fdd20b 60%, 
+      black 60%, black 80%, 
+      #fdd20b 80%, #fdd20b 100%
+    );
+}
+
+#hamburger-menu #sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: #542f65;
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+#hamburger-menu h3 {
+  color: #fdd20b;
+  font-size: 2.2rem;
+}
+
+#hamburger-menu ul {
+  padding-left: 0px;
+}
+
+#hamburger-menu li {
+  list-style-type: none;
+  line-height: 3rem;
+}
+
+#hamburger-menu a {
+  color: #fdd20b;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+  text-decoration: underline;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+}
+#hamburger-input:checked ~ .overlay{
+   visibility: visible;
+  opacity: 0.4;
+}
+
+
+@media screen and (max-width: 600px) {
+  #main-menu {
+    display: none;
+  }
+  #hamburger-menu {
+    display: inline;
+  }
+}

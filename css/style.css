@@ -215,11 +215,6 @@ a:hover {
     color: #fff6cc;
     margin: 0 auto;
 }
-
-
-
-/*ABOUT PAGE HERO*/
-
 #aboutHero .jumbotronContent{
     width: fit-content;
     display: flex;
@@ -228,8 +223,6 @@ a:hover {
     padding-top: 400px; 
 
 }
-
-
 .aboutContainer {
     display: flex;
     justify-content: center;

@@ -38,17 +38,18 @@ p{
     position: absolute;
     top: 60;
     left: 5%;
+    max-width:128px;
 }
 @media screen and (max-width:600px) {
     .logo{
         max-width:128px;
+        max-height: 128px;
         position: relative;
-        left: 25%;
     }
-    .navBar {    
-        display: flex;
-        justify-content: center; 
+    #navButton{
+        display: none;
     }
+    
 
     
 }
@@ -92,6 +93,12 @@ p{
     justify-content: flex-start;
     align-items: center;
     padding-top: 24px;
+    float: left;
+    padding-left: 170px;
+}
+#main-menu {
+    display: flex;
+    align-items: center;
 }
 
 .nav-item {

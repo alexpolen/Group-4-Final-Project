@@ -75,15 +75,33 @@ p{
     margin: 0 auto;
     width: 100%;
 }
-
+.nav ul {
+    width: 100%;
+    justify-content: baseline;
+}
+.nav li:nth-child(1) {
+    padding: 10px;
+}
+.nav li:nth-child(2) {
+    padding: 10px;
+}
+.nav li:nth-child(3) {
+    padding: 10px;
+    padding-right: 50%;
+}
+.nav li:nth-child(4) {
+    padding: 10px;
+    position: fixed;
+    right: 10%;
+}
 .nav-item {
     justify-content: space-between;
 }
-
-.nav-item2 {
+/*
+.nav-item {
     flex-grow: 2;
 }
-
+*/
 .navBar div{
     display: flex;
     align-items: center;

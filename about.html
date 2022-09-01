@@ -33,30 +33,64 @@
   </head>
   <body>
     <header>
+      
       <div class="jumbotron jumbotron-fluid" id="aboutHero">
         <div class="navBar">
-          <div>
+
+          <!-- Start Hamburger Menu -->
+          <a class="logo" href="index.html"><img src="images/logo img.png"></a>
+          <nav id="main-menu">
+            <ul class="nav">
+              <li class="nav-item"><a href="about.html">About</a></li>
+              <li class="nav-item"><a href="https://ci.ovationtix.com/35628">Events</a></li>
+              <li class="nav-item"><a href="https://docs.google.com/document/d/e/2PACX-1vQ-AlqLZPCwe4bYa0yYd94efWk25dxDA8jm12SfP81NVMJOfXUkkIDvznSp_TaVgCbS3PVlOI-WaRaM/pub">Menu</a></li>
+            </ul>
+          </nav>
+          <p class="lead">
+              <a class="btn btn-primary btn-lg" id="navButton" role="button" href="https://goo.gl/maps/kPw7HEseHAcir2t98" target="_blank">Find Us</a>
+          </p>
+        </div>  
+          
+          <input type="checkbox" id="hamburger-input" class="burger-shower" />
+          <label id="hamburger-menu" for="hamburger-input">
+            <nav id="sidebar-menu">
+              <h3>Clocktower Cabaret</h3>
+              <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://ci.ovationtix.com/35628">Events</a></li>
+                <li><a href="https://docs.google.com/document/d/e/2PACX-1vQ-AlqLZPCwe4bYa0yYd94efWk25dxDA8jm12SfP81NVMJOfXUkkIDvznSp_TaVgCbS3PVlOI-WaRaM/pub">Menu</a></li>
+              </ul>
+            </nav>
+          </label>
+          <div class="overlay"></div>
+
+          <div class="container jumbotronContent">
+            <h1 class="display-4">Entertaining Denver for 16+ Years!</h1>
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" role="button" href="https://ci.ovationtix.com/35628" target="_blank">Click Here for Tickets</a>
+            </p>
+          </div>
+           <!-- End Hamburger Menu -->
+
+
+           <!-- Old nav
+          <nav id="main-menu"
             <a class="logo" href="index.html"><img src="images/logo img.png"></a>
             <ul class="nav">
                 <li class="nav-item">
-                <a class="nav-link active" href="about.html">About</a>
+                  <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="https://ci.ovationtix.com/35628" target="_blank">Events</a>
+                  <a class="nav-link" href="https://ci.ovationtix.com/35628" target="_blank">Events</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="https://docs.google.com/document/d/e/2PACX-1vQ-AlqLZPCwe4bYa0yYd94efWk25dxDA8jm12SfP81NVMJOfXUkkIDvznSp_TaVgCbS3PVlOI-WaRaM/pub" target="_blank">Menu</a>
+                  <a class="nav-link" href="https://docs.google.com/document/d/e/2PACX-1vQ-AlqLZPCwe4bYa0yYd94efWk25dxDA8jm12SfP81NVMJOfXUkkIDvznSp_TaVgCbS3PVlOI-WaRaM/pub" target="_blank">Menu</a>
                 </li>
             </ul>
-             
+            end Old Nav-->
+
+
           </div>
-          <a class="btn btn-primary btn-lg" id="navButton" role="button" href="https://goo.gl/maps/kPw7HEseHAcir2t98" target="_blank">Find Us</a>    
-        </div>
-        <div class="container jumbotronContent">
-          <h1 class="display-4">Entertaining Denver for 16+ Years!</h1>
-          <p class="lead">
-            <a class="btn btn-primary btn-lg" role="button" href="https://ci.ovationtix.com/35628" target="_blank">Click Here for Tickets</a>
-          </p>
         </div>
       </div>
     </header>
@@ -102,7 +136,7 @@
             <div id="contactImg1">
                 <img src="images/boxoffice contact img.png" id="boxOffice">    
             </div>
-            <div id contact1=>
+            <div id="contact1">
                 <h3>Box Office</h3>
                 <p>Contact the Box Office for help with tickets, groups, or shows.</p>
                 <p class="email">boxoffice@clocktowercabaret.com</button>
@@ -165,7 +199,7 @@
 
     <!-- Footer -->
     <footer>
-        <a class="logo" href="index.html"><img src="images/boxoffice contact img.png"></a>
+        <a id="logo" href="index.html"><img src="images/boxoffice contact img.png"></a>
         <div id="footerContent">
             <h1>Join Us at The Clocktower Cabaret</h1>
             <div id="socailMedia">
